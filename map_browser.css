@@ -123,17 +123,16 @@ h2 {
   background: rgb(250, 246, 240);
   width: 100%;
 }
-.head img {
+.head img input {
     margin-top: 40px;
   display: inline;
 }
 
 .head h1 {
   display: inline;
-  padding: 50px;
+  padding-right: 50px;
 }
 .head {
-padding: 50px;
 display: inline;
 }
 

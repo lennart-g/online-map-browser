@@ -1,24 +1,46 @@
-# Web frontend for SQLite database of DP2 maps
-This website is currently hosted at http://whoa.ml/map_browser/index.php .
+# Web frontend for SQLite database of Digital Paintball 2 maps
 
-The map database is maintained using the 
-MapSearch Discord bot https://github.com/aapokaapo/MapSearch/ .
+This website is currently hosted at http://whoa.ml/dpfiles/map_browser.php
 
-## index.php
-This file generates a list of maps stored in
-sqlite_mapdata.db. This list can be sorted
-and filtered using search bar. Clicking at a 
-table row redirects so map_detail.php .
+The map database is maintained using the MapSearch Discord bot https://github.com/lennart-g/MapSearch
 
-![index](imgs/index.png)
+## Search bar
+![Search bar](imgs/search_bar.png)
+The website allows browsing DP2 maps and all their 
+file requirements. Both allows searching for a string
+as well is additional parameters.
 
-## map_detail.php
-This file provides a download link for the map
-file and displays an in-game screenshot of the
-map as well as a top-down rendering of the map
-generate using functionality from https://github.com/lennart-g/BSP-Hacking .
-It also displays information from the database like
-the loading message and tags that were added via
-Discord.
+In both cases, a list of database entries is returned.
+![map list](imgs/map_list.png)
 
-![map_detail](imgs/map_detail.png)
+## Map Detail
+Clicking at an entry leads to a detail view
+
+At the top, images of the map are shown.
+![map images](imgs/map_detail_images.png)
+
+The maps can be downloaded as a single file (Quake 2 .bsp)
+or as a zip with all its file requirements (textures, models etc.).
+
+Below that, additional map information as well as required
+files are shown.
+
+![map detail](imgs/map_detail_additional.png)
+
+## File Detail
+A similar structure applies to the file detail view.
+Comparable to the map detail, maps requiring this file
+are listed.
+
+![file detail](imgs/file_detail.png)
+
+## Database status
+Because Digital Paintball 2 evolved over more than 20 years,
+many maps have been created for it. Since there has never been
+a successful attempt to collect these files, many are missing
+or at least not collected on a central server.
+
+To support the growth of this database, a WIP status page
+is provided:
+
+![status](imgs/status.png)
